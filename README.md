@@ -1,5 +1,5 @@
 # React-Native-App-Backend
-This is the backend part of a simple React Native application supporting people to meet and do activities together
+This is the backend part of a simple React Native application supporting people to meet and do activities together. The backend is built upon python flask framework.
 
 To run the code:
 - modeify the `host` option to your ip address at line 221 in the "/app.py" file. (this is necessary because 'Network Request Error' would occur if we used the localhost)
