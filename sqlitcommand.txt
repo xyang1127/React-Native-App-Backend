@@ -1,0 +1,25 @@
+# Register User:
+user1 = User(name='xy', username='admin', password='admin')
+
+user2 = User(name='Alex', username='alex', password='alex')
+user3 = User(name='Bill', username='bill', password='bill')
+user4 = User(name='Frank', username='frank', password='frank')
+
+db.session.add(user1)
+db.session.commit()
+
+# Add activity:(remember to join)
+a1 = Activity(name='Basketball', type='sport', location='221 Blvd, Raleigh, North Carolina', description='Let\'s do sport', organizer=user1)
+
+a2 = Activity(name='Math Homework', type='study', location='downtown library', description='Good good study, day day up', organizer=user2)
+a3 = Activity(name='Harry Potter', type='movie', location='cinema, New York City', description='Go Go Go', organizer=user3)
+a4 = Activity(name='Football', type='sport', location='downtown court', description='5 vs 5', organizer=user2)
+
+#search
+some_owner = User.query.filter_by(id = 1).first()
+
+#join in (Register)
+a1.participants.append(user1)
+db.session.commit()
+
+# WHERE CustomerName LIKE '%or%'	Finds any values that have "or" in any position
