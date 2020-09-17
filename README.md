@@ -6,7 +6,7 @@ To run the code:
 - cd into the root folder of this repository: `cd path_to_the_folder`
 - run `pipenv shell`
 - run `python3 app.py`
-- Finally, the server is running and you should see the url of the server in the termial. This url is also used for the frontend part to connect to the server. To do that, please refer to the [backend part][1]
+- Finally, the server is running and you should see the url of the server in the termial. This url is also used for the frontend part to connect to the server. To do that, please refer to the [frontend part][1]
 
 
 ## Design and Implementation:
