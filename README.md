@@ -13,7 +13,8 @@ To run the code:
 This is an API server and it is writen in python flask framework. I used SQLAlchemy to implement the database and Marshmallow for serialization.
 
 ### Database:
-There are two main part in this app: user and activity. Their relationship is many-to-many. To implement that, I created a User table, an Activity table and a associate table called Participants:
+There are two main part in this app: user and activity. Their relationship is many-to-many. To implement that, I created a User table, an Activity table and a associate table called Participants. The relationship between Activity to Participants is one-to-many and The relationship between User to Participants one-to-many.
+
 #### activity Table:
 | Attribute | Description |
 | ----------- | ----------- |
