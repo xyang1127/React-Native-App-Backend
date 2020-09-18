@@ -4,7 +4,7 @@ This is the backend part of a simple React Native application supporting people 
 To run the code:
 - modeify the `host` option to your ip address at line 221 in the "/app.py" file. (this is necessary because 'Network Request Error' would occur if we used the localhost)
 - cd into the root folder of this repository: `cd path_to_the_folder`
-- run `pipenv shell`
+- install dependencies: `pip3 install flask flask-sqlalchemy flask-marshmallow marshmallow-sqlalchemy`
 - run `python3 app.py`
 - Finally, the server is running and you should see the url of the server in the termial. This url is also used for the frontend part to connect to the server. To do that, please refer to the [frontend part][1]
 
