@@ -76,7 +76,7 @@ There are two main part in this app: user and activity. Their relationship is ma
 
 #### delete activity:
 - HTTP method: DELETE
-- path: /activity/<id>
+- path: /activity/\<id\>
 - parameters: None
 
 
