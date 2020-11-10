@@ -40,43 +40,43 @@ There are two main part in this app: user and activity. Their relationship is ma
 
 ### APIs:
 #### log in:
-- HTTP method: POST
-- path: /user/login
+- HTTP method: GET
+- path: /users/login
 - parameters: username, password
 
 #### add user:
 - HTTP method: POST
-- path: /user
+- path: /users
 - parameters: name, username, password
 
 #### add activity:
 - HTTP method: POST
-- path: /activity
+- path: /activities
 - parameters: name, time, type, location, user_id, description
 
 #### search activities:
 - HTTP method: GET
-- path: /activity/search
+- path: /activities/search
 - parameters: type, time, locaion
 
 #### get all activities:
 - HTTP method: GET
-- path: /activity
+- path: /activities
 - parameters: None
 
 #### join activity:
 - HTTP method: GET
-- path: /activity/join
+- path: /activities/join
 - parameters: user_id, activity_id
 
 #### unregister activity:
 - HTTP method: GET
-- path: /activity/unregister
+- path: /activities/unregister
 - parameters: user_id, activity_id
 
 #### delete activity:
 - HTTP method: DELETE
-- path: /activity/\<id\>
+- path: /activities/\<id\>
 - parameters: None
 
 
