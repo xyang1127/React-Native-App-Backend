@@ -40,7 +40,7 @@ There are two main part in this app: user and activity. Their relationship is ma
 
 ### APIs:
 #### log in:
-- HTTP method: GET
+- HTTP method: POST
 - path: /users/login
 - parameters: username, password
 
